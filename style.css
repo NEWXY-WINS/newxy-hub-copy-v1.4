@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-color: black;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+       background-position: absolute;
+            background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+justify-content: center;
+min-height: 100vh;
+height: fit-content;
+text-align: center;
+overflow-x: hidden;
+}
+p{
+    padding: 4%;
+}
+h1{
+    margin: 5%;
+}
+::-webkit-scrollbar {
+    
+    width: 5px;
+    height: 0px;
+    border-radius: 50px;
+    background-color: #c2d2e400;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+
+background-color: #155f5800;    border-radius: 25px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    border-radius: 25px;
+    height: 10px;
+    background: linear-gradient(135deg, #14ffe9, #ffed3b, #ff00e0);
+}
+img{
+    border-radius: 11px ;
+    border: solid rgb(223, 213, 213);
+    box-shadow: 2px 1px 20px white;
+    width: 27rem;
+}
+.button{
+    border: none;
+    border-radius: 11px;
+}
+button{
+background: linear-gradient(200deg);    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+    border: none;
+    margin: 0.2%;
+    border-radius: 11px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    animation: ease-in-out 0.5s;
+   animation: btnani all infinite ;
+}
+@keyframes btnani{
+    0%{
+        background: linear-gradient(200deg),red,blue;
+        scale: 1;
+    }
+    50%{
+        scale: 1.5;
+
+        background: linear-gradient(200deg),blue,red;
+    }
+    100%{
+        scale: 1;
+
+        background: linear-gradient(200deg),rgb(255, 0, 0),blue;
+    }
+}
+/* style.css */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide slides by default */
+.mySlides {
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Next/previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Position the "next" button to the right */
+.next {
+    right:0;
+    margin-left: 10px; ;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with some transparency */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+/* Dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active, .dot:hover {
+    background-color: #717171;
+}
+nav{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.199);
+    box-shadow: 3px 3px 3p rgba(0,0,0,0.3);
+    
+    }
+    nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+    
+    }
+    nav li {
+    height: 50px;
+    border-radius: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    nav a {
+    height: 90%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-weight: 999;
+    text-shadow: 2px 2px 20px#ffffff;
+    border-radius: 25px 25px 25px ;
+    transition: 0.3s all ease-in-out;
+    
+    }
+    nav a:hover{
+        padding: 0 30px;
+        margin-top: 2%;
+        height: 100%;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.637);
+    text-decoration: none;
+    height: 90%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 999;
+    text-shadow: 2px 2px 20px#ffffff;
+    border-radius: 25px 25px 25px ;
+    }
+    nav li:first-child{
+        margin-right: auto;
+    }
+    .Sidebar{
+        position: fixed;
+        top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 150, 150, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+     
+    }
+    .Sidebar li{
+    width: 100%;
+    
+    }
+    .Sidebar a{
+        width: 100%;
+    }
+    .sidebar:hover{
+      background-color: rgba(0, 0, 0, 0.048);
+      border-radius:0px;
+    }
+    .menu-button{
+    display: none;
+    
+    }
+    
+    
+    @media(max-width:800px){
+    .hideOnMobile{
+    display: none;
+    }
+    
+    .menu-button{
+    
+        display: block;
+    }
+    }
+    .bar{
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius:0px;
+    
+    }
+    .bar a:hover{
+        font-weight: 900;
+    text-shadow: 2px 2px 20px#333;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+    color: rgb(0, 0, 0);
+    margin-top: 2px;
+    height: 90%;
+    transition: 0.3s all ease-in-out;
+    
+    }
+    
+    @media(max-width:400px){
+    .SideBar{
+    width: 100%;
+    
+    
+}}
+    footer{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.486); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        max-width: 300px;
+        max-height: 300px;
+        background-color: #fefefe;
+        border-radius: 21px;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+      /* The Close Button */
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .popupbtn{
+        color: white;
+        font-size: x-large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background: linear-gradient(200deg,rgb(0, 255, 0),rgb(255, 153, 0),red,rgb(255, 153, 0),purple,rgb(255, 153, 0),blue,rgb(255, 153, 0),blue,rgb(255, 153, 0),purple,rgb(255, 153, 0),rgb(0, 255, 0));
+        padding: 4%;
+        width: 30%;
+      }
+      .popupbtn:hover{
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 20px #333;
+        scale: 1.1;
+      }
+      #toggleTitleBtn{
+        cursor:pointer;
+      }
